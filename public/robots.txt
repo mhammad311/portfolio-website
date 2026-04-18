@@ -1,0 +1,36 @@
+# WebX Portfolio - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow crawling of admin/private pages
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow search engines to crawl JS and CSS
+Allow: /*.js$
+Allow: /*.css$
+
+# Crawl-delay for servers with limited resources
+Crawl-delay: 1
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /

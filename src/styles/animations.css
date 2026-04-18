@@ -1,0 +1,833 @@
+/* src/styles/animations.css */
+
+/* ==========================================================================
+   Premium Animation Library - ENHANCED
+   ========================================================================== */
+
+/* Particle Swarm Animation */
+@keyframes particle-swarm {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(40px, -30px) rotate(90deg) scale(1.2);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(0, -60px) rotate(180deg) scale(1);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translate(-40px, -30px) rotate(270deg) scale(0.8);
+    opacity: 0.6;
+  }
+}
+
+@keyframes particle-swarm-2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(50px, 40px) rotate(120deg) scale(1.3);
+  }
+  66% {
+    transform: translate(-30px, 60px) rotate(240deg) scale(0.7);
+  }
+}
+
+/* Neon Border Flow Animation */
+@keyframes neon-border-flow {
+  0% {
+    border-image: linear-gradient(45deg, 
+      #64FFDA, #00FFA3, #00E5FF, #64FFDA, 
+      #FF00FF, #FF00B8, #64FFDA
+    ) 1;
+    border-image-slice: 1;
+    opacity: 0.8;
+  }
+  25% {
+    border-image: linear-gradient(45deg, 
+      #00E5FF, #64FFDA, #FF00FF, #00E5FF,
+      #64FFDA, #00FFA3, #00E5FF
+    ) 1;
+    border-image-slice: 1;
+    opacity: 1;
+  }
+  50% {
+    border-image: linear-gradient(45deg, 
+      #FF00FF, #00E5FF, #64FFDA, #FF00FF,
+      #00E5FF, #64FFDA, #FF00FF
+    ) 1;
+    border-image-slice: 1;
+    opacity: 0.8;
+  }
+  75% {
+    border-image: linear-gradient(45deg, 
+      #00FFA3, #FF00FF, #00E5FF, #00FFA3,
+      #FF00FF, #64FFDA, #00FFA3
+    ) 1;
+    border-image-slice: 1;
+    opacity: 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, 
+      #64FFDA, #00FFA3, #00E5FF, #64FFDA,
+      #FF00FF, #FF00B8, #64FFDA
+    ) 1;
+    border-image-slice: 1;
+    opacity: 0.8;
+  }
+}
+
+/* Hyper Pulse Animation */
+@keyframes hyper-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px rgba(100, 255, 218, 0.5),
+      0 0 15px rgba(100, 255, 218, 0.3),
+      0 0 30px rgba(100, 255, 218, 0.2),
+      inset 0 0 10px rgba(100, 255, 218, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 
+      0 0 15px rgba(100, 255, 218, 0.8),
+      0 0 30px rgba(100, 255, 218, 0.6),
+      0 0 60px rgba(100, 255, 218, 0.4),
+      0 0 90px rgba(100, 255, 218, 0.2),
+      inset 0 0 20px rgba(100, 255, 218, 0.5);
+    transform: scale(1.02);
+  }
+}
+
+/* Multi-color Text Shimmer */
+@keyframes multi-color-shimmer {
+  0% {
+    background-position: -200% center;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: 200% center;
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* 3D Wave Animation */
+@keyframes wave-3d {
+  0%, 100% {
+    transform: 
+      translateY(0) 
+      scale(1) 
+      rotateX(0deg) 
+      rotateY(0deg);
+  }
+  25% {
+    transform: 
+      translateY(-15px) 
+      scale(1.05) 
+      rotateX(5deg) 
+      rotateY(5deg);
+  }
+  50% {
+    transform: 
+      translateY(-5px) 
+      scale(1.03) 
+      rotateX(-3deg) 
+      rotateY(-3deg);
+  }
+  75% {
+    transform: 
+      translateY(-10px) 
+      scale(1.07) 
+      rotateX(2deg) 
+      rotateY(-2deg);
+  }
+}
+
+/* Dual Rotating Gear */
+@keyframes rotate-gear-dual {
+  0% {
+    transform: rotate(0deg) scale(1);
+    filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5));
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(100, 255, 218, 0.8));
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5));
+  }
+}
+
+@keyframes rotate-gear-reverse {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.1);
+  }
+}
+
+/* Quantum Bounce */
+@keyframes quantum-bounce {
+  0%, 100% {
+    transform: 
+      translateY(0) 
+      rotate(0deg) 
+      scale(1);
+    opacity: 1;
+  }
+  15% {
+    transform: 
+      translateY(-30px) 
+      rotate(-8deg) 
+      scale(1.1);
+    opacity: 0.9;
+  }
+  30% {
+    transform: 
+      translateY(0) 
+      rotate(0deg) 
+      scale(1);
+    opacity: 1;
+  }
+  45% {
+    transform: 
+      translateY(-20px) 
+      rotate(6deg) 
+      scale(1.05);
+    opacity: 0.95;
+  }
+  60% {
+    transform: 
+      translateY(0) 
+      rotate(0deg) 
+      scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: 
+      translateY(-10px) 
+      rotate(-3deg) 
+      scale(1.02);
+    opacity: 0.98;
+  }
+}
+
+/* Holographic Morphing Gradient */
+@keyframes holographic-gradient {
+  0% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg) brightness(1.2);
+  }
+  25% {
+    background-position: 100% 50%;
+    filter: hue-rotate(90deg) brightness(1.3);
+  }
+  50% {
+    background-position: 50% 100%;
+    filter: hue-rotate(180deg) brightness(1.4);
+  }
+  75% {
+    background-position: 50% 0%;
+    filter: hue-rotate(270deg) brightness(1.3);
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: hue-rotate(360deg) brightness(1.2);
+  }
+}
+
+/* Cyber Glitch Effect */
+@keyframes cyber-glitch {
+  0% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+  5% {
+    transform: translate(-3px, 1px);
+    clip-path: inset(10% 0 20% 0);
+  }
+  10% {
+    transform: translate(2px, -1px);
+    clip-path: inset(0 15% 0 15%);
+  }
+  15% {
+    transform: translate(-1px, 3px);
+    clip-path: inset(25% 0 25% 0);
+  }
+  20% {
+    transform: translate(1px, -2px);
+    clip-path: inset(0 10% 0 10%);
+  }
+  25% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ==========================================================================
+   Enhanced Entrance Animations
+   ========================================================================== */
+
+/* Quantum Entanglement Entrance */
+@keyframes quantum-entrance {
+  0% {
+    opacity: 0;
+    filter: 
+      blur(20px) 
+      hue-rotate(180deg);
+    transform: 
+      scale(0.8) 
+      rotateX(45deg) 
+      rotateY(45deg);
+  }
+  50% {
+    opacity: 0.7;
+    filter: 
+      blur(10px) 
+      hue-rotate(90deg);
+    transform: 
+      scale(1.1) 
+      rotateX(15deg) 
+      rotateY(15deg);
+  }
+  100% {
+    opacity: 1;
+    filter: 
+      blur(0) 
+      hue-rotate(0deg);
+    transform: 
+      scale(1) 
+      rotateX(0) 
+      rotateY(0);
+  }
+}
+
+/* Teleport Slide In */
+@keyframes teleport-slide {
+  0% {
+    opacity: 0;
+    transform: 
+      translateX(-100px) 
+      translateZ(-200px) 
+      rotateY(60deg);
+    filter: blur(15px) brightness(1.5);
+  }
+  60% {
+    opacity: 0.8;
+    transform: 
+      translateX(20px) 
+      translateZ(0) 
+      rotateY(-10deg);
+    filter: blur(5px) brightness(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: 
+      translateX(0) 
+      translateZ(0) 
+      rotateY(0);
+    filter: blur(0) brightness(1);
+  }
+}
+
+/* Holographic Stagger */
+@keyframes holographic-stagger {
+  0% {
+    opacity: 0;
+    transform: 
+      translateY(40px) 
+      scale(0.8) 
+      rotateX(30deg);
+    filter: 
+      blur(10px) 
+      hue-rotate(180deg);
+  }
+  70% {
+    opacity: 0.9;
+    transform: 
+      translateY(-10px) 
+      scale(1.05) 
+      rotateX(-5deg);
+    filter: 
+      blur(2px) 
+      hue-rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: 
+      translateY(0) 
+      scale(1) 
+      rotateX(0);
+    filter: 
+      blur(0) 
+      hue-rotate(0deg);
+  }
+}
+
+/* ==========================================================================
+   Enhanced Interactive Hover Animations
+   ========================================================================== */
+
+/* Plasma Ripple Effect */
+@keyframes plasma-ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+    background: radial-gradient(
+      circle, 
+      rgba(100, 255, 218, 0.8) 0%, 
+      rgba(0, 255, 163, 0.6) 30%, 
+      rgba(0, 229, 255, 0.4) 60%, 
+      transparent 100%
+    );
+  }
+  100% {
+    transform: scale(6);
+    opacity: 0;
+    background: radial-gradient(
+      circle, 
+      rgba(255, 0, 255, 0.6) 0%, 
+      rgba(255, 0, 184, 0.4) 30%, 
+      rgba(100, 255, 218, 0.2) 60%, 
+      transparent 100%
+    );
+  }
+}
+
+/* Quantum Wiggle */
+@keyframes quantum-wiggle {
+  0%, 100% {
+    transform: 
+      rotate(-5deg) 
+      scale(1) 
+      translateY(0);
+  }
+  25% {
+    transform: 
+      rotate(8deg) 
+      scale(1.05) 
+      translateY(-5px);
+  }
+  50% {
+    transform: 
+      rotate(-3deg) 
+      scale(1.03) 
+      translateY(3px);
+  }
+  75% {
+    transform: 
+      rotate(5deg) 
+      scale(1.07) 
+      translateY(-3px);
+  }
+}
+
+/* 3D Card Hologram */
+@keyframes hologram-card {
+  0% {
+    transform: 
+      perspective(1000px) 
+      rotateX(0) 
+      rotateY(0) 
+      translateZ(0)
+      scale(1);
+    box-shadow: 
+      0 5px 15px rgba(0, 0, 0, 0.1),
+      0 0 0 rgba(100, 255, 218, 0);
+  }
+  100% {
+    transform: 
+      perspective(1000px) 
+      rotateX(8deg) 
+      rotateY(8deg) 
+      translateZ(20px)
+      scale(1.02);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 30px rgba(100, 255, 218, 0.4),
+      0 0 60px rgba(0, 229, 255, 0.2);
+  }
+}
+
+/* ==========================================================================
+   Enhanced Background Animations
+   ========================================================================== */
+
+/* Cyber Grid Flow */
+@keyframes cyber-grid-flow {
+  0% {
+    background-position: 
+      0 0, 
+      0 0;
+    opacity: 0.8;
+  }
+  50% {
+    background-position: 
+      50px 50px, 
+      -50px -50px;
+    opacity: 1;
+  }
+  100% {
+    background-position: 
+      100px 100px, 
+      -100px -100px;
+    opacity: 0.8;
+  }
+}
+
+/* Quantum Dot Field */
+@keyframes quantum-dot-field {
+  0%, 100% {
+    transform: 
+      translateY(0) 
+      translateX(0) 
+      scale(1);
+    opacity: 0.6;
+  }
+  20% {
+    transform: 
+      translateY(-30px) 
+      translateX(20px) 
+      scale(1.3);
+    opacity: 0.9;
+  }
+  40% {
+    transform: 
+      translateY(20px) 
+      translateX(-30px) 
+      scale(0.8);
+    opacity: 0.7;
+  }
+  60% {
+    transform: 
+      translateY(-20px) 
+      translateX(-20px) 
+      scale(1.2);
+    opacity: 0.8;
+  }
+  80% {
+    transform: 
+      translateY(30px) 
+      translateX(30px) 
+      scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+/* ==========================================================================
+   Enhanced Loader Animations
+   ========================================================================== */
+
+/* Orbital Quantum Loader */
+@keyframes orbital-quantum {
+  0% {
+    transform: 
+      rotate(0deg) 
+      translateX(60px) 
+      rotate(0deg) 
+      scale(1);
+    filter: 
+      drop-shadow(0 0 5px rgba(100, 255, 218, 0.8))
+      hue-rotate(0deg);
+  }
+  50% {
+    transform: 
+      rotate(180deg) 
+      translateX(80px) 
+      rotate(-180deg) 
+      scale(1.3);
+    filter: 
+      drop-shadow(0 0 15px rgba(0, 229, 255, 0.9))
+      hue-rotate(180deg);
+  }
+  100% {
+    transform: 
+      rotate(360deg) 
+      translateX(60px) 
+      rotate(-360deg) 
+      scale(1);
+    filter: 
+      drop-shadow(0 0 5px rgba(100, 255, 218, 0.8))
+      hue-rotate(360deg);
+  }
+}
+
+/* Plasma Ring Pulse */
+@keyframes plasma-ring-pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.9;
+    box-shadow: 
+      0 0 0 0 rgba(100, 255, 218, 0.7),
+      0 0 0 10px rgba(0, 229, 255, 0.5),
+      0 0 0 20px rgba(255, 0, 255, 0.3);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+    box-shadow: 
+      0 0 0 15px rgba(100, 255, 218, 0.5),
+      0 0 0 30px rgba(0, 229, 255, 0.3),
+      0 0 0 45px rgba(255, 0, 255, 0.1);
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0.9;
+    box-shadow: 
+      0 0 0 0 rgba(100, 255, 218, 0.7),
+      0 0 0 10px rgba(0, 229, 255, 0.5),
+      0 0 0 20px rgba(255, 0, 255, 0.3);
+  }
+}
+
+/* ==========================================================================
+   Enhanced Animation Classes
+   ========================================================================== */
+
+/* Entrance Animations */
+.animate-quantum-entrance {
+  animation: quantum-entrance 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.animate-teleport-slide {
+  animation: teleport-slide 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-holographic-stagger {
+  animation: holographic-stagger 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: calc(var(--item-index, 0) * 0.1s);
+}
+
+/* Hover Animations */
+.hover-plasma-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-plasma-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hover-plasma-ripple:hover::after {
+  animation: plasma-ripple 0.8s ease-out;
+}
+
+.hover-quantum-wiggle:hover {
+  animation: quantum-wiggle 0.6s ease;
+}
+
+.hover-hologram-card {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-hologram-card:hover {
+  animation: hologram-card 0.4s ease forwards;
+}
+
+/* Background Animations */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(rgba(100, 255, 218, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 255, 218, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 80px 80px, 80px 80px;
+  animation: cyber-grid-flow 20s linear infinite;
+}
+
+.bg-quantum-dots {
+  background-image: 
+    radial-gradient(rgba(100, 255, 218, 0.3) 2px, transparent 2px),
+    radial-gradient(rgba(0, 229, 255, 0.2) 1px, transparent 1px),
+    radial-gradient(rgba(255, 0, 255, 0.1) 3px, transparent 3px);
+  background-size: 80px 80px, 60px 60px, 100px 100px;
+  background-position: 0 0, 30px 30px, 50px 50px;
+  animation: quantum-dot-field 30s ease-in-out infinite;
+}
+
+/* Special Effects */
+.hyper-pulse {
+  animation: hyper-pulse 2s ease-in-out infinite;
+}
+
+.neon-border-flow {
+  border: 2px solid transparent;
+  animation: neon-border-flow 4s linear infinite;
+}
+
+.cyber-glitch {
+  animation: cyber-glitch 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+/* Text Effects */
+.multi-color-shimmer {
+  background: linear-gradient(
+    90deg,
+    #64FFDA,
+    #00FFA3,
+    #00E5FF,
+    #FF00FF,
+    #FF00B8,
+    #64FFDA
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: multi-color-shimmer 4s linear infinite;
+}
+
+/* Loading States */
+.loader-orbital-quantum {
+  animation: orbital-quantum 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.loader-plasma-ring {
+  animation: plasma-ring-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Particle Systems */
+.particle-swarm {
+  animation: particle-swarm 6s ease-in-out infinite;
+}
+
+.particle-swarm-2 {
+  animation: particle-swarm-2 8s ease-in-out infinite reverse;
+}
+
+/* ==========================================================================
+   Animation Utilities (Enhanced)
+   ========================================================================== */
+
+.delay-50 { animation-delay: 50ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-250 { animation-delay: 250ms; }
+.delay-350 { animation-delay: 350ms; }
+.delay-450 { animation-delay: 450ms; }
+.delay-550 { animation-delay: 550ms; }
+.delay-650 { animation-delay: 650ms; }
+.delay-750 { animation-delay: 750ms; }
+.delay-850 { animation-delay: 850ms; }
+.delay-950 { animation-delay: 950ms; }
+
+.duration-150 { animation-duration: 150ms; }
+.duration-250 { animation-duration: 250ms; }
+.duration-350 { animation-duration: 350ms; }
+.duration-450 { animation-duration: 450ms; }
+.duration-550 { animation-duration: 550ms; }
+.duration-650 { animation-duration: 650ms; }
+.duration-750 { animation-duration: 750ms; }
+.duration-850 { animation-duration: 850ms; }
+.duration-950 { animation-duration: 950ms; }
+.duration-2000 { animation-duration: 2000ms; }
+
+.animation-cubic-bounce { animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+.animation-elastic { animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+/* Stagger Children Enhanced */
+.stagger-children-quantum > * {
+  opacity: 0;
+  animation: quantum-entrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.stagger-children-quantum > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children-quantum > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children-quantum > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children-quantum > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children-quantum > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children-quantum > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger-children-quantum > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger-children-quantum > *:nth-child(8) { animation-delay: 0.8s; }
+
+/* ==========================================================================
+   Performance Optimized Animations
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-quantum-entrance,
+  .animate-teleport-slide,
+  .animate-holographic-stagger,
+  .hyper-pulse,
+  .neon-border-flow,
+  .cyber-glitch,
+  .multi-color-shimmer,
+  .loader-orbital-quantum,
+  .loader-plasma-ring,
+  .bg-cyber-grid,
+  .bg-quantum-dots,
+  .particle-swarm,
+  .particle-swarm-2,
+  .hover-quantum-wiggle,
+  .hover-hologram-card {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .hover-plasma-ripple::after {
+    display: none;
+  }
+}
+
+/* Enhanced Hardware Acceleration */
+.hardware-accelerate-enhanced {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* 3D Layer Support */
+.layer-3d {
+  transform-style: preserve-3d;
+}
+
+/* Smooth GPU Rendering */
+.gpu-rendering {
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Color Palette Variables for Easy Customization
+   ========================================================================== */
+
+:root {
+  --neon-cyan: #64FFDA;
+  --neon-green: #00FFA3;
+  --neon-blue: #00E5FF;
+  --neon-pink: #FF00FF;
+  --neon-magenta: #FF00B8;
+  --glow-intensity: 0.8;
+}
+
+/* Customize animation colors easily */
+.custom-color-scheme {
+  --neon-cyan: #00D4FF;
+  --neon-green: #00FF88;
+  --neon-blue: #0099FF;
+  --neon-pink: #FF0066;
+  --neon-magenta: #FF00CC;
+  --glow-intensity: 1;
+}
