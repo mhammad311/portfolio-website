@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const DEFAULT_TITLE = 'Hamad Hussain | Full Stack Developer';
 const DEFAULT_DESCRIPTION =
-  'Portfolio of Hamad Hussain, a full stack developer building modern WordPress, MERN, Shopify, and custom web experiences.';
+  'Hamad Hussain builds fast, secure, and conversion-focused websites, e-commerce stores, and full-stack web applications for businesses and agencies.';
 
 const upsertMeta = (selector, attributes) => {
   let tag = document.head.querySelector(selector);

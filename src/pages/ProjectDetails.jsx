@@ -764,7 +764,7 @@ const ProjectDetails = () => {
               max-w-2xl mx-auto
               mb-8
             ">
-              Let's create something amazing together. I'd love to hear about your project.
+              Let's turn your next idea into a reliable, polished product your users can trust.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

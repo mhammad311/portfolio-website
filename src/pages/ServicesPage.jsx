@@ -29,7 +29,7 @@ const ServicesPage = () => {
   usePageMeta({
     title: 'Services | Hamad Hussain',
     description:
-      'Explore development services by Hamad Hussain including WordPress, MERN, Shopify, UI implementation, and custom web solutions.',
+      'Hire Hamad Hussain for full-stack development, WordPress, Shopify, UI implementation, APIs, and custom business web solutions.',
   });
 
   const [activeTab, setActiveTab] = useState('all');
@@ -113,8 +113,8 @@ const ServicesPage = () => {
                 mb-10
               "
             >
-              I provide comprehensive web development solutions, from concept to deployment. 
-              Each project is treated with attention to detail and a commitment to excellence.
+              I build practical digital products for founders, agencies, and growing teams:
+              fast websites, scalable apps, conversion-focused stores, and maintainable systems.
             </motion.p>
             
             <motion.div
@@ -148,7 +148,7 @@ const ServicesPage = () => {
           <SectionTitle
             subtitle="Categories"
             title="Browse by Service Type"
-            description="Find the perfect solution for your project"
+            description="Choose the service that matches your business goal"
             align="center"
           />
           
@@ -238,7 +238,7 @@ const ServicesPage = () => {
           <SectionTitle
             subtitle="Workflow"
             title="My Development Process"
-            description="A structured approach to ensure project success"
+            description="A clear workflow that keeps scope, quality, and delivery on track"
             align="center"
             gradient
           />
@@ -470,7 +470,7 @@ const ServicesPage = () => {
           <SectionTitle
             subtitle="Advantages"
             title="Why Work With Me"
-            description="What sets me apart from other developers"
+            description="A business-first development partner for teams that care about results"
             align="center"
             gradient
           />
@@ -554,7 +554,7 @@ const ServicesPage = () => {
                   Ready to Start Your Project?
                 </h3>
                 <p className="text-text-body">
-                  Let's discuss your ideas and create something amazing together.
+                  Let's map your goal, define the right solution, and build it with confidence.
                 </p>
               </div>
               

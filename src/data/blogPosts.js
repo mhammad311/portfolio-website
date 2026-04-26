@@ -11,14 +11,14 @@ export const blogPosts = [
      ════════════════════════════════════════ */
   {
     id: 1,
-    slug: 'react-2025',
-    title: 'The Future of React in 2025: What Every Developer Must Know',
+    slug: 'react-2026',
+    title: 'The Future of React in 2026: What Every Developer Must Know',
     excerpt: 'Exploring React 19, Server Components, concurrent rendering, and the compiler — why React is still the king of frontend.',
     author: 'Hamad',
     authorBio: 'Full Stack Developer with 2+ years building scalable MERN apps, WordPress sites, and modern web experiences.',
     authorAvatar: null,
-    date: 'Jan 15, 2025',
-    dateISO: '2025-01-15',
+    date: 'Apr 18, 2026',
+    dateISO: '2026-04-18',
     readTime: '8 min read',
     category: 'React',
     tags: ['React', 'JavaScript', 'Frontend', 'React 19'],
@@ -294,8 +294,8 @@ function ExpensiveList({ items, onSelect }) {
     excerpt: 'A complete guide to structuring production-ready APIs — error handling, authentication, rate limiting, and deployment.',
     author: 'Hamad',
     authorBio: 'Full Stack Developer specializing in MERN Stack, REST APIs, and scalable backend architecture.',
-    date: 'Jan 10, 2025',
-    dateISO: '2025-01-10',
+    date: 'Mar 22, 2026',
+    dateISO: '2026-03-22',
     readTime: '10 min read',
     category: 'Backend',
     tags: ['Node.js', 'Express', 'API', 'Backend'],
@@ -542,8 +542,8 @@ export const authLimiter = rateLimit({
     excerpt: 'How I designed and built a full multi-vendor marketplace — seller dashboards, Stripe payments, order management, and admin panel with role-based access.',
     author: 'Hamad',
     authorBio: 'Full Stack Developer who has built e-commerce platforms, real-time apps, and custom CMS solutions for global clients.',
-    date: 'Sep 20, 2024',
-    dateISO: '2024-09-20',
+    date: 'May 10, 2025',
+    dateISO: '2025-05-10',
     readTime: '15 min read',
     category: 'Project',
     tags: ['MERN', 'E-Commerce', 'Stripe', 'Case Study'],
@@ -730,8 +730,8 @@ export const createCheckout = async (req, res) => {
     excerpt: 'Landing page, portfolio, e-commerce, or web app? A clear guide for business owners to understand which solution fits their goals and budget.',
     author: 'Hamad',
     authorBio: 'Full Stack Developer who helps businesses choose and build the right digital solution — from simple landing pages to complex web apps.',
-    date: 'Jul 28, 2024',
-    dateISO: '2024-07-28',
+    date: 'Jan 11, 2025',
+    dateISO: '2025-01-11',
     readTime: '7 min read',
     category: 'Business',
     tags: ['Business', 'Web Strategy', 'Startups', 'Digital'],
@@ -852,8 +852,8 @@ export const createCheckout = async (req, res) => {
     excerpt: 'Build a professional WordPress theme using PHP, ACF, custom post types, and the block editor without page builders.',
     author: 'Hamad',
     authorBio: 'WordPress developer with 2+ years building custom themes and plugins for agencies and businesses.',
-    date: 'Nov 10, 2024',
-    dateISO: '2024-11-10',
+    date: 'Sep 6, 2025',
+    dateISO: '2025-09-06',
     readTime: '13 min read',
     category: 'WordPress',
     tags: ['WordPress', 'PHP', 'Theme Development'],
@@ -1032,8 +1032,8 @@ add_action('init', 'hamad_register_portfolio_cpt');`,
     excerpt: 'A behind-the-scenes look at my final year project — combining NLP transformers and convolutional neural networks to detect phishing URLs.',
     author: 'Hamad',
     authorBio: 'BSIT graduate with a specialization in AI-based web security. Final year project earned top marks for innovation.',
-    date: 'Oct 15, 2024',
-    dateISO: '2024-10-15',
+    date: 'Jul 12, 2025',
+    dateISO: '2025-07-12',
     readTime: '14 min read',
     category: 'AI/ML',
     tags: ['AI', 'Machine Learning', 'BERT', 'Python', 'NLP'],
@@ -1170,9 +1170,15 @@ class CNNURLClassifier(nn.Module):
   },
 ];
 
+const oldSlugRedirects = {
+  'react-2025': 'react-2026',
+};
+
 /* ── Helper functions ── */
-export const getPostBySlug = (slug) =>
-  blogPosts.find((p) => p.slug === slug) || null;
+export const getPostBySlug = (slug) => {
+  const resolvedSlug = oldSlugRedirects[slug] || slug;
+  return blogPosts.find((p) => p.slug === resolvedSlug) || null;
+};
 
 export const getRelatedPosts = (currentPost, count = 3) =>
   blogPosts

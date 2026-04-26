@@ -31,10 +31,10 @@ export const projects = [
     id: 'ecommerce-mern',
     title: 'E-Commerce Website (MERN + Admin Panel)',
     shortTitle: 'MERN E-Commerce',
-    tagline: 'Complete MERN-based e-commerce platform with admin dashboard',
+    tagline: 'Revenue-ready MERN store with admin control',
     description:
-      'A complete MERN-based e-commerce platform with product management, cart, wishlist, order handling, JWT authentication, and a secure admin dashboard for adding products, managing inventory, and viewing customer orders.',
-    longDescription: `A comprehensive e-commerce solution built with the MERN stack featuring both customer-facing store and administrative controls.
+      'A production-style MERN commerce platform with secure authentication, product management, cart, wishlist, order workflows, inventory control, and an admin dashboard for day-to-day operations.',
+    longDescription: `A business-ready e-commerce solution built with the MERN stack, combining a smooth customer storefront with practical administrative controls.
 
 **Key Features:**
 - User authentication with JWT
@@ -92,10 +92,10 @@ export const projects = [
     id: 'hospital-mern',
     title: 'Hospital Website (MERN)',
     shortTitle: 'Hospital Management',
-    tagline: 'Hospital management system with appointment booking',
+    tagline: 'Appointment and doctor management for healthcare teams',
     description:
-      'A hospital management website featuring doctor profiles, services overview, appointment booking form, department listings, and admin-side management for doctors and appointments.',
-    longDescription: `A comprehensive hospital management system built with MERN stack.
+      'A healthcare web platform with doctor profiles, department pages, appointment booking, patient-friendly service discovery, and admin tools for managing doctors and appointments.',
+    longDescription: `A healthcare management system built with MERN stack to improve appointment intake, doctor visibility, and admin coordination.
 
 **Key Features:**
 - Doctor profiles and specialization
@@ -136,10 +136,10 @@ export const projects = [
     id: 'phishing-detection',
     title: 'AI-Based Phishing Detection System',
     shortTitle: 'Phishing Detection AI',
-    tagline: 'Hybrid ML model for phishing URL detection',
+    tagline: 'AI-powered URL risk detection for security workflows',
     description:
-      'A hybrid ML model using BERT + CNN with advanced URL feature engineering, fuzzy domain similarity, SMOTE balancing, and real-time prediction through a Gradio UI.',
-    longDescription: `An advanced phishing detection system using machine learning to identify malicious URLs.
+      'A machine learning phishing detection system using BERT, CNN, URL feature engineering, fuzzy domain similarity, SMOTE balancing, and real-time predictions through a Gradio interface.',
+    longDescription: `An AI-powered phishing detection system designed to identify suspicious URLs and support faster security decision-making.
 
 **Key Features:**
 - Hybrid BERT + CNN model architecture
@@ -180,10 +180,10 @@ export const projects = [
     id: 'wordpress-business',
     title: 'Real Estate WordPress Platform Built From Scratch',
     shortTitle: 'Real Estate Platform',
-    tagline: 'Custom real estate platform built with WordPress Underscores and pure code',
+    tagline: 'Scalable property CMS for real estate operations',
     description:
-      'A fully custom real estate website built from scratch on the WordPress Underscores starter theme with custom post types, taxonomies, dedicated templates, and an admin-friendly CMS for managing property listings at scale.',
-    longDescription: `A custom real estate WordPress platform built from scratch without page builders, focused on clean architecture, scalability, and an efficient admin experience.
+      'A custom WordPress real estate platform built with Underscores, custom post types, taxonomies, dedicated templates, and an admin-friendly CMS for managing property listings at scale.',
+    longDescription: `A custom real estate WordPress platform built from scratch without page builders, focused on clean architecture, scalable listings, and an efficient admin experience.
 
 **Key Features:**
 - 3 Custom Post Types for Properties, Agents, and Locations
@@ -228,10 +228,10 @@ export const projects = [
     id: 'wp-theme-webx',
     title: 'Custom WordPress Theme — WebX',
     shortTitle: 'WebX Theme',
-    tagline: 'Lightweight custom WordPress theme',
+    tagline: 'Fast custom WordPress theme for professional websites',
     description:
-      'A custom lightweight WordPress theme built from scratch with optimized performance, custom widgets, theme options, and reusable components.',
-    longDescription: `A custom WordPress theme developed from scratch with performance in mind.
+      'A lightweight custom WordPress theme with optimized performance, reusable sections, custom widgets, theme options, and a clean structure for easy content management.',
+    longDescription: `A custom WordPress theme developed from scratch for fast loading, flexible content control, and maintainable website operations.
 
 **Key Features:**
 - Lightweight and fast loading
@@ -269,10 +269,10 @@ export const projects = [
     id: 'wp-theme-codex',
     title: 'Custom WordPress Theme — CodeX',
     shortTitle: 'CodeX Theme',
-    tagline: 'Modern fast WordPress theme',
+    tagline: 'Flexible WordPress theme for content-led brands',
     description:
-      'A modern, fast, and clean WordPress theme designed with custom post types, dynamic sections, global theme options, and reusable blocks.',
-    longDescription: `A modern WordPress theme with advanced features and flexibility.
+      'A fast WordPress theme with custom post types, dynamic sections, global options, reusable blocks, and a mobile-first structure for professional publishing.',
+    longDescription: `A modern WordPress theme built for flexible content teams that need speed, reusable sections, and reliable editing workflows.
 
 **Key Features:**
 - Custom post types support
@@ -310,10 +310,10 @@ export const projects = [
     id: 'multi-wp-sites',
     title: 'Multi WordPress Websites Collection',
     shortTitle: 'WordPress Collection',
-    tagline: 'Collection of custom WordPress websites',
+    tagline: 'WordPress websites for multiple business models',
     description:
-      'A complete collection of custom WordPress websites including a clothing store, e-commerce shop, personal blog, news portal, and portfolio website.',
-    longDescription: `A portfolio of various WordPress websites built for different industries.
+      'A collection of WordPress builds for clothing, retail, publishing, news, and portfolio use cases, with e-commerce setup, custom themes, SEO basics, and performance improvements.',
+    longDescription: `A portfolio of WordPress websites built for different industries and business goals.
 
 **Projects Included:**
 1. Clothing Store - E-commerce fashion website
@@ -352,10 +352,10 @@ export const projects = [
     id: 'shopify-store',
     title: 'Professional Shopify Store',
     shortTitle: 'Shopify Store',
-    tagline: 'Conversion-focused Shopify store',
+    tagline: 'Shopify store optimized for trust and checkout flow',
     description:
-      'A conversion-focused Shopify store with theme customization, product pages, payment gateway integration, Shopify apps setup, and speed optimization.',
-    longDescription: `A professional Shopify store built for maximum conversions.
+      'A conversion-focused Shopify store with custom theme work, optimized product pages, payment setup, app configuration, speed improvements, SEO basics, and analytics tracking.',
+    longDescription: `A professional Shopify store built to improve buyer trust, product discovery, and checkout completion.
 
 **Key Features:**
 - Custom theme customization
@@ -394,10 +394,10 @@ export const projects = [
     id: 'shopify-custom',
     title: 'Shopify Store From Scratch',
     shortTitle: 'Custom Shopify',
-    tagline: 'Shopify store built from scratch',
+    tagline: 'Custom Shopify experience for a growing store',
     description:
-      'A Shopify store built completely from scratch with custom UI enhancements, product structuring, store automation, and optimized checkout experience.',
-    longDescription: `A Shopify store developed from ground up with custom implementations.
+      'A from-scratch Shopify build with custom UI enhancements, organized product structure, store automation, optimized checkout flow, and performance-focused frontend work.',
+    longDescription: `A Shopify store developed from the ground up with custom implementation choices that support better merchandising and smoother operations.
 
 **Key Features:**
 - Custom UI/UX design

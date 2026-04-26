@@ -1001,14 +1001,14 @@ const About = () => {
   usePageMeta({
     title: 'About | Hamad Hussain',
     description:
-      'Hamad Hussain - Full Stack Web Developer with 2+ years experience in MERN Stack, WordPress, and modern web technologies.',
+      'Hamad Hussain is a full-stack developer and tech consultant building reliable MERN, WordPress, Shopify, and custom web solutions for business growth.',
   });
 
   const passions = [
-    { title: 'Clean Code',          description: 'Writing maintainable, efficient, and well-documented code', icon: <FiCode />      },
-    { title: 'User Experience',     description: 'Creating intuitive and delightful user interactions',       icon: <FiUser />      },
-    { title: 'Continuous Learning', description: 'Always exploring new technologies and best practices',     icon: <FiTarget />    },
-    { title: 'Problem Solving',     description: 'Tackling complex challenges with creative solutions',       icon: <FiBriefcase /> },
+    { title: 'Clean Code',          description: 'Writing maintainable, scalable code that future teams can trust', icon: <FiCode />      },
+    { title: 'User Experience',     description: 'Designing clear product flows that help visitors take action',       icon: <FiUser />      },
+    { title: 'Continuous Learning', description: 'Applying modern tools where they improve speed, quality, or ROI',     icon: <FiTarget />    },
+    { title: 'Problem Solving',     description: 'Turning complex requirements into simple, usable digital systems',       icon: <FiBriefcase /> },
   ];
 
   return (
@@ -1069,14 +1069,14 @@ const About = () => {
 
               <div className="space-y-5 mb-8">
                 <p className="text-text-body text-lg leading-relaxed">
-                  Passionate Full Stack Developer specializing in MERN Stack,
-                  WordPress, and modern web technologies. I build scalable
-                  applications, custom e-commerce platforms, and high-performance
-                  websites for global clients.
+                  I build business-ready websites, e-commerce stores, dashboards,
+                  and web applications using MERN, WordPress, Shopify, and modern
+                  frontend tooling.
                 </p>
                 <p className="text-text-body text-lg leading-relaxed">
-                  From AI-based phishing detection to production-ready dashboards,
-                  I deliver clean, efficient code and exceptional user experiences.
+                  My focus is simple: clean architecture, fast performance, clear
+                  communication, and digital products that help clients win trust,
+                  convert users, and operate with confidence.
                 </p>
               </div>
 
@@ -1105,7 +1105,7 @@ const About = () => {
           <SectionTitle
             subtitle="Philosophy"
             title="What Drives Me"
-            description="Core principles guiding my development journey"
+            description="The standards I use to deliver business value, not just code"
             align="center"
             gradient
           />

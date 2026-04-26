@@ -20,9 +20,9 @@ import Contact from '../sections/Contact';
  */
 const Home = () => {
   usePageMeta({
-    title: 'Hamad Hussain | Full Stack Developer',
+    title: 'Hamad Hussain | Full Stack Developer & Tech Consultant',
     description:
-      'Portfolio homepage for Hamad Hussain featuring WordPress, MERN, Shopify, and custom full stack development work.',
+      'Full-stack development portfolio featuring business-ready WordPress, MERN, Shopify, and custom web applications built for performance, trust, and growth.',
   });
 
   const pageVariants = {

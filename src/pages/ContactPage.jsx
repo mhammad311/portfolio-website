@@ -107,7 +107,7 @@ const ContactPage = () => {
   usePageMeta({
     title: 'Contact | Hamad Hussain',
     description:
-      'Get in touch with Hamad Hussain for WordPress, MERN, Shopify, and custom web development projects.',
+      'Contact Hamad Hussain to discuss full-stack development, WordPress, Shopify, MERN, and custom business web solutions.',
   });
 
   const WHATSAPP_NUMBER = '923497818575';
@@ -116,7 +116,7 @@ const ContactPage = () => {
     {
       icon: <FiMail />,
       title: 'Email',
-      description: 'Best for detailed project discussions and formal inquiries',
+      description: 'Best for proposals, scope details, and formal project discussions',
       details: 'mhweb11@gmail.com',
       action: 'mailto:mhweb11@gmail.com',
       color: 'from-blue-500/20 to-blue-600/10',
@@ -127,7 +127,7 @@ const ContactPage = () => {
     {
       icon: <FaWhatsapp />,
       title: 'WhatsApp',
-      description: 'Fastest way to reach me for quick conversations',
+      description: 'Fastest option for quick questions, timelines, and project fit',
       details: '+92 349 7818575',
       action: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi! I'm interested in discussing a project.")}`,
       color: 'from-green-500/20 to-green-600/10',
@@ -139,7 +139,7 @@ const ContactPage = () => {
     {
       icon: <FiPhone />,
       title: 'Phone',
-      description: 'Call directly for urgent matters or real-time discussion',
+      description: 'Best for urgent decisions or live project alignment',
       details: '+92 349 7818575',
       action: 'tel:+923497818575',
       color: 'from-yellow-500/20 to-yellow-600/10',
@@ -150,7 +150,7 @@ const ContactPage = () => {
     {
       icon: <FiMessageSquare />,
       title: 'Live Chat',
-      description: 'Available during business hours for quick questions',
+      description: 'Useful for quick checks before booking a full discussion',
       details: 'Start a conversation',
       action: '#contact',
       color: 'from-purple-500/20 to-purple-600/10',
@@ -163,23 +163,23 @@ const ContactPage = () => {
   const whyWorkWithMe = [
     {
       icon: <FiZap />,
-      title: 'Fast Delivery',
-      description: 'Projects delivered on time, every time. No delays, no excuses.',
+      title: 'Reliable Delivery',
+      description: 'Clear milestones, realistic timelines, and steady execution.',
     },
     {
       icon: <FiShield />,
-      title: 'Quality Guaranteed',
-      description: 'Clean, tested, and production-ready code with best practices.',
+      title: 'Production-Ready Work',
+      description: 'Clean, tested, maintainable code built for launch and growth.',
     },
     {
       icon: <FiGlobe />,
       title: 'Global Experience',
-      description: 'Worked with clients from 10+ countries across different industries.',
+      description: 'Experience working with businesses across markets, industries, and time zones.',
     },
     {
       icon: <FiClock />,
-      title: '24/7 Support',
-      description: 'Post-project support and maintenance to keep things running.',
+      title: 'Post-Launch Support',
+      description: 'Ongoing fixes, improvements, and maintenance after delivery.',
     },
   ];
   

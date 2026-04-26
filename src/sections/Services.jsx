@@ -145,8 +145,8 @@ const Services = () => {
             max-w-2xl mx-auto
             leading-relaxed
           ">
-            Comprehensive development solutions tailored to your needs. 
-            From concept to deployment, I handle every aspect of your digital presence.
+            Business-focused web, mobile, and e-commerce solutions built to look sharp,
+            load fast, and support real growth from first click to launch.
           </p>
         </motion.div>
         

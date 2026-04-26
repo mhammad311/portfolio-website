@@ -30,6 +30,7 @@ import {
 import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { getPostBySlug, getRelatedPosts, getPrevNextPosts } from '../data/blogPosts';
+import usePageMeta from '../hooks/usePageMeta';
 
 /* ══════════════════════════════════════════════
    READING PROGRESS BAR
@@ -699,6 +700,12 @@ const BlogPost = () => {
   const post         = getPostBySlug(slug);
   const relatedPosts = post ? getRelatedPosts(post) : [];
   const { prev, next } = post ? getPrevNextPosts(post) : { prev: null, next: null };
+
+  usePageMeta({
+    title: post ? `${post.title} | Hamad Hussain` : 'Blog Post | Hamad Hussain',
+    description: post?.excerpt || 'Read development articles, case studies, and business software insights by Hamad Hussain.',
+    robots: post ? 'index, follow' : 'noindex, follow',
+  });
 
   /* ── Active TOC section on scroll ── */
   useEffect(() => {

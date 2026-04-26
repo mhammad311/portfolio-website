@@ -56,10 +56,10 @@ export const services = [
     id: 'web-development',
     title: 'Custom Web Development',
     shortTitle: 'Web Development',
-    tagline: 'Building modern, responsive web applications',
+    tagline: 'Scalable web platforms for real business workflows',
     description:
-      'Full-stack web development using modern technologies like React, Node.js, and MongoDB. From simple websites to complex web applications.',
-    longDescription: `I specialize in building complete web applications using the latest technologies. This includes:
+      'Custom websites and full-stack applications built with React, Node.js, and MongoDB for speed, reliability, and measurable business impact.',
+    longDescription: `I build complete web applications that support real users, internal teams, and business growth. This includes:
     
     • Custom web applications from scratch
     • Single Page Applications (SPA) with React
@@ -94,10 +94,10 @@ export const services = [
     id: 'frontend-development',
     title: 'Frontend Development',
     shortTitle: 'Frontend',
-    tagline: 'Creating beautiful, interactive user interfaces',
+    tagline: 'Polished interfaces that turn visitors into users',
     description:
-      'Modern UI development using React, Vue.js, or Angular with animations, responsive design, and exceptional user experience.',
-    longDescription: `I create stunning, responsive frontend experiences that captivate users:
+      'Responsive frontend development using React, Vue.js, or Angular with clean components, smooth interactions, and conversion-focused UX.',
+    longDescription: `I create responsive frontend experiences that make products feel fast, clear, and easy to use:
     
     • React.js / Vue.js / Angular development
     • Component-based architecture
@@ -132,9 +132,9 @@ export const services = [
     id: 'mobile-app-development',
     title: 'Mobile App Development',
     shortTitle: 'Mobile Apps',
-    tagline: 'Cross-platform mobile applications',
+    tagline: 'Cross-platform apps that feel fast and dependable',
     description:
-      'Building beautiful, high-performance mobile applications for iOS and Android using React Native and Flutter.',
+      'iOS and Android app development with React Native and Flutter, focused on performance, usability, offline flows, and store-ready delivery.',
     longDescription: `I develop high-quality mobile applications using modern frameworks:
     
     • Cross-platform iOS & Android apps
@@ -170,10 +170,10 @@ export const services = [
     id: 'ecommerce-development',
     title: 'E-Commerce Development',
     shortTitle: 'E-Commerce',
-    tagline: 'Complete online store solutions',
+    tagline: 'Online stores built for trust, speed, and sales',
     description:
-      'Building feature-rich e-commerce platforms with shopping cart, payment integration, inventory management, and admin panel.',
-    longDescription: `End-to-end e-commerce development solutions:
+      'Conversion-focused e-commerce platforms with product management, secure checkout, inventory workflows, analytics, and easy admin control.',
+    longDescription: `End-to-end e-commerce development focused on smooth buying experiences and efficient store operations:
     
     • Custom e-commerce platforms
     • Shopify store development
@@ -209,10 +209,10 @@ export const services = [
     id: 'wordpress-development',
     title: 'WordPress Development',
     shortTitle: 'WordPress',
-    tagline: 'Custom WordPress websites',
+    tagline: 'Professional WordPress sites without template limitations',
     description:
-      'Building custom WordPress themes and plugins, speed optimization, security hardening, and complete website solutions.',
-    longDescription: `Complete WordPress solutions for businesses:
+      'Custom WordPress themes, plugins, WooCommerce builds, speed optimization, security hardening, and maintainable CMS workflows.',
+    longDescription: `Complete WordPress solutions for businesses that need control, speed, and long-term maintainability:
     
     • Custom theme development
     • Plugin development
@@ -248,10 +248,10 @@ export const services = [
     id: 'api-development',
     title: 'API Development',
     shortTitle: 'API Development',
-    tagline: 'Robust backend APIs and microservices',
+    tagline: 'Reliable backends for products, teams, and integrations',
     description:
-      'Building scalable RESTful APIs, GraphQL endpoints, and microservices architecture for web and mobile applications.',
-    longDescription: `Building scalable backend infrastructure:
+      'REST APIs, GraphQL endpoints, authentication, database design, and integrations built for secure, scalable product operations.',
+    longDescription: `Backend infrastructure built to keep products secure, connected, and ready to scale:
     
     • RESTful API design & development
     • GraphQL API development
@@ -286,10 +286,10 @@ export const services = [
     id: 'ui-ux-design',
     title: 'UI/UX Design',
     shortTitle: 'UI/UX Design',
-    tagline: 'Beautiful and intuitive user experiences',
+    tagline: 'User flows designed around clarity and conversion',
     description:
-      'Creating user-centered designs with wireframes, prototypes, and design systems that enhance user engagement and satisfaction.',
-    longDescription: `Comprehensive UI/UX design services:
+      'Wireframes, prototypes, and design systems that make products easier to understand, navigate, and trust.',
+    longDescription: `UI/UX design services focused on clarity, usability, and business outcomes:
     
     • User research & analysis
     • Wireframing & prototyping
@@ -324,10 +324,10 @@ export const services = [
     id: 'devops-cloud',
     title: 'DevOps & Cloud Services',
     shortTitle: 'DevOps',
-    tagline: 'Deployment, scaling, and monitoring',
+    tagline: 'Deployment systems that keep products stable',
     description:
-      'Setting up CI/CD pipelines, cloud infrastructure, containerization, and monitoring solutions for optimal performance.',
-    longDescription: `DevOps and cloud infrastructure services:
+      'CI/CD pipelines, cloud deployment, containerization, monitoring, backups, and performance tuning for production-ready releases.',
+    longDescription: `DevOps and cloud infrastructure services for smoother launches and more reliable operations:
     
     • CI/CD pipeline setup
     • Docker containerization
@@ -367,7 +367,7 @@ export const servicePackages = [
   {
     id: 'basic',
     name: 'Basic',
-    description: 'Perfect for small projects or startups',
+    description: 'Best for lean launches, MVP pages, and focused business needs',
     features: [
       'Responsive Design',
       'Basic Functionality',
@@ -381,7 +381,7 @@ export const servicePackages = [
   {
     id: 'standard',
     name: 'Standard',
-    description: 'Ideal for growing businesses',
+    description: 'Best for growing businesses that need stronger features and polish',
     features: [
       'Everything in Basic',
       'Advanced Functionality',
@@ -396,7 +396,7 @@ export const servicePackages = [
   {
     id: 'premium',
     name: 'Premium',
-    description: 'Complete solution for enterprises',
+    description: 'Best for teams that need a complete, scalable digital system',
     features: [
       'Everything in Standard',
       'Custom Features',
@@ -418,42 +418,42 @@ export const processSteps = [
   {
     step: 1,
     title: 'Discovery',
-    description: 'Understanding your requirements, goals, and vision',
+    description: 'Clarifying business goals, users, scope, and success metrics',
     icon: '🔍',
     duration: '1-2 days',
   },
   {
     step: 2,
     title: 'Planning',
-    description: 'Creating detailed specifications and project plan',
+    description: 'Defining features, milestones, technical direction, and delivery plan',
     icon: '📋',
     duration: '2-3 days',
   },
   {
     step: 3,
     title: 'Design',
-    description: 'Wireframing, prototyping, and visual design',
+    description: 'Designing clear screens, user flows, and responsive layouts',
     icon: '🎨',
     duration: '3-7 days',
   },
   {
     step: 4,
     title: 'Development',
-    description: 'Building the application with clean, efficient code',
+    description: 'Building the product with maintainable code and practical architecture',
     icon: '💻',
     duration: '2-6 weeks',
   },
   {
     step: 5,
     title: 'Testing',
-    description: 'Quality assurance and bug fixing',
+    description: 'Checking responsiveness, performance, edge cases, and key workflows',
     icon: '🧪',
     duration: '3-7 days',
   },
   {
     step: 6,
     title: 'Launch',
-    description: 'Deployment, training, and support',
+    description: 'Deploying the product, handing over access, and supporting go-live',
     icon: '🚀',
     duration: '2-3 days',
   },
@@ -465,38 +465,38 @@ export const processSteps = [
 export const whyChooseUs = [
   {
     id: 'quality',
-    title: 'Quality Code',
-    description: 'Clean, maintainable, and well-documented code following best practices',
+    title: 'Maintainable Code',
+    description: 'Clean architecture and readable code that can grow with your business',
     icon: FiZap,
   },
   {
     id: 'communication',
     title: 'Clear Communication',
-    description: 'Regular updates and transparent communication throughout the project',
+    description: 'Regular progress updates, direct answers, and no confusing technical fog',
     icon: FiTrendingUp,
   },
   {
     id: 'delivery',
     title: 'On-Time Delivery',
-    description: 'Committed to meeting deadlines without compromising quality',
+    description: 'Realistic timelines, organized milestones, and dependable execution',
     icon: FiLayers,
   },
   {
     id: 'support',
     title: 'Post-Launch Support',
-    description: 'Continued support and maintenance after project completion',
+    description: 'Launch support, fixes, improvements, and maintenance after delivery',
     icon: FiBox,
   },
   {
     id: 'experience',
     title: 'Proven Experience',
-    description: 'Years of experience delivering successful projects',
+    description: 'Hands-on delivery across business websites, stores, dashboards, and apps',
     icon: FiMonitor,
   },
   {
     id: 'innovation',
-    title: 'Innovation',
-    description: 'Using the latest technologies and industry best practices',
+    title: 'Practical Technology',
+    description: 'Modern tools chosen for speed, reliability, and long-term value',
     icon: FiSettings,
   },
 ];

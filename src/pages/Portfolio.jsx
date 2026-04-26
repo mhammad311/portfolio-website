@@ -32,7 +32,7 @@ const Portfolio = () => {
   usePageMeta({
     title: 'Portfolio | Hamad Hussain',
     description:
-      'Browse portfolio projects by Hamad Hussain across WordPress, MERN, Shopify, AI, and custom web development.',
+      'Explore business-focused MERN, WordPress, Shopify, AI, and custom web development projects built by Hamad Hussain.',
   });
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -610,8 +610,8 @@ const Portfolio = () => {
               mb-8
               relative z-10
             ">
-              Have a project in mind? Let's discuss how we can create something 
-              amazing for your business.
+              Have a project in mind? Let's discuss how to build a digital product
+              that earns trust, performs well, and supports your business goals.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">

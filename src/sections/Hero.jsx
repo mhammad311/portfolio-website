@@ -443,9 +443,9 @@ const Hero = () => {
                 max-w-2xl
               "
             >
-              I'm a <span className="text-accent font-semibold">Full Stack Developer</span> 
-              & <span className="text-accent font-semibold">Tech Consultant</span> 
-              passionate about building scalable, performant applications with modern technologies.
+              I help startups, agencies, and business leaders turn ideas into
+              <span className="text-accent font-semibold"> reliable digital products</span> with
+              full-stack development, clean UI, secure backends, and launch-ready execution.
             </motion.p>
             
             {/* Tech Stack Progress */}

@@ -65,8 +65,8 @@ const Footer = () => {
             </Link>
 
             <p className="text-text-body text-sm leading-relaxed mb-6 max-w-sm">
-              A passionate full-stack developer crafting beautiful, functional, and
-              user-centered digital experiences. Let's build something amazing together.
+              Full-stack development and technical consulting for businesses that need
+              fast, reliable, conversion-ready websites, stores, and web applications.
             </p>
 
             <div className="flex items-center gap-3">

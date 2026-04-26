@@ -239,8 +239,8 @@ const Projects = () => {
             leading-relaxed
             mb-10
           ">
-            A curated collection of my finest work, demonstrating technical expertise, 
-            creative problem-solving, and attention to detail.
+            Selected work built for real business use cases, from e-commerce platforms
+            and admin dashboards to WordPress systems and AI-powered tools.
           </p>
           
           {/* Quick Stats */}
@@ -678,7 +678,8 @@ const Projects = () => {
               Ready to start your project?
             </h3>
             <p className="text-text-body/80">
-              Let's collaborate to bring your ideas to life with cutting-edge solutions.
+              Let's turn your idea into a polished, scalable product that is ready for clients,
+              customers, and decision-makers.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button
