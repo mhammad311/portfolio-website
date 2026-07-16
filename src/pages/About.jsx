@@ -746,13 +746,32 @@ const SkillsSection = () => {
 const TimelineSection = () => {
   const timeline = [
     {
+      date: 'Mar 2026 - Present',
+      duration: 'Full-time',
+      title: 'Full Stack Developer',
+      company: 'Software House',
+      location: 'On-site / Hybrid',
+      type: 'work',
+      current: true,
+      icon: <FiBriefcase size={20} />,
+      color: '#64FFDA',
+      bullets: [
+        'Work on SaaS products across medical, e-commerce, appointment booking, and finance domains.',
+        'Build production features with Next.js, NestJS, PostgreSQL, AWS, and Git-based team workflows.',
+        'Developed a full medical e-commerce store with product catalog, checkout flows, and an admin panel for managing products, orders, and operations.',
+        'Built a complete appointment system with separate client, clinic-admin, and super-admin portals for role-based workflows.',
+        'Contribute to finance product features with secure APIs, database design, and scalable backend architecture.',
+      ],
+      tags: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'SaaS'],
+    },
+    {
       date: 'Jun 2024 – Present',
       duration: 'Full-time · Freelance',
       title: 'Full Stack Web Developer',
       company: 'Self-Employed',
       location: 'Remote · Worldwide',
       type: 'work',
-      current: true,
+      current: false,
       icon: <FiMonitor size={20} />,
       color: '#64FFDA',
       bullets: [

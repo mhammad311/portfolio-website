@@ -10,6 +10,7 @@ import { getProjectImages } from './projectImages';
  * Project categories
  */
 export const projectCategories = [
+  { id: 'saas-products', name: 'SaaS Products', count: 3, icon: 'SaaS' },
   { id: 'all', name: 'All Projects', count: 0, icon: '📁' },
   { id: 'full-stack', name: 'Full Stack', count: 3, icon: '🚀' },
   { id: 'ai-ml', name: 'AI/ML', count: 1, icon: '🤖' },
@@ -24,6 +25,179 @@ export const projectCategories = [
  * Note: Images will be added dynamically via getProjectImages function
  */
 export const projects = [
+  // ============================================
+  // COMPANY SAAS PRODUCTS
+  // ============================================
+  {
+    id: 'medical-ecommerce-saas',
+    title: 'Medical E-Commerce SaaS Platform',
+    shortTitle: 'Medical E-Commerce',
+    tagline: 'Full product store with operations-ready admin panel',
+    description:
+      'A medical-field e-commerce product built for managing a complete product catalog, customer ordering flow, and admin operations from one central system.',
+    longDescription: `A full e-commerce product for the medical field, developed as part of a software house team. The platform supports product discovery, product detail flows, ordering workflows, and an admin panel for managing day-to-day store operations.
+
+**Key Features:**
+- Complete product catalog for medical products
+- Product listing, detail, filtering, and search flows
+- Customer-facing e-commerce experience
+- Admin panel for product, order, and operational management
+- Role-based access for internal users
+- Backend APIs for product and order workflows
+- Deployment and collaboration through AWS and Git-based workflows
+
+**Technical Highlights:**
+- Next.js frontend for fast user-facing screens
+- NestJS backend architecture
+- PostgreSQL database design
+- Secure API structure
+- AWS deployment support
+- Git workflow for team collaboration`,
+    client: 'Software House Product',
+    role: 'Full Stack Developer',
+    teamSize: 1,
+    duration: 'Company Product',
+    status: 'completed',
+    date: '2026-03-01',
+    featured: true,
+    popular: true,
+    category: 'saas-products',
+    subcategory: 'medical-ecommerce',
+    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'SaaS'],
+    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
+    images: [],
+    thumbnail: '',
+    challenges: [
+      'Structuring a complete e-commerce flow for a medical product catalog',
+      'Building admin features that make product and order management practical',
+      'Keeping frontend, backend, and database workflows maintainable as features grew',
+    ],
+    solutions: [
+      'Separated customer-facing flows from admin workflows with clear role boundaries',
+      'Designed reusable API modules and database models around product and order operations',
+      'Used Git-based collaboration and AWS deployment practices for production delivery',
+    ],
+    results: [
+      'Delivered a full e-commerce product experience for medical products',
+      'Enabled admin users to manage products, orders, and operations from one panel',
+      'Created a scalable foundation for adding future SaaS features',
+    ],
+    order: 0,
+  },
+
+  {
+    id: 'clinic-appointment-saas',
+    title: 'Clinic Appointment SaaS With Three Portals',
+    shortTitle: 'Clinic Appointment System',
+    tagline: 'Client, clinic-admin, and super-admin portals',
+    description:
+      'A medical appointment system with three separate portals for clients, clinic administrators, and super administrators, built for structured healthcare booking workflows.',
+    longDescription: `A complete appointment system for the medical field, designed around three clear user portals: client, clinic-admin, and super-admin. The product helps users book appointments while giving clinics and platform administrators the tools they need to manage schedules, users, and operational workflows.
+
+**Key Features:**
+- Client portal for appointment booking and account flows
+- Clinic-admin portal for clinic-level management
+- Super-admin portal for platform-level control
+- Role-based access and protected workflows
+- Appointment scheduling and management
+- Dashboard-style interfaces for administrators
+- API-driven architecture for scalable product growth
+
+**Technical Highlights:**
+- Next.js interfaces for multiple portals
+- NestJS backend services
+- PostgreSQL relational data modeling
+- Role-based authorization
+- AWS deployment workflows
+- Git-based collaboration and delivery`,
+    client: 'Software House Product',
+    role: 'Full Stack Developer',
+    teamSize: 1,
+    duration: 'Company Product',
+    status: 'completed',
+    date: '2026-04-01',
+    featured: true,
+    popular: true,
+    category: 'saas-products',
+    subcategory: 'medical-appointments',
+    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'RBAC'],
+    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
+    images: [],
+    thumbnail: '',
+    challenges: [
+      'Managing three different portals without mixing user permissions',
+      'Designing appointment workflows that work for clients and clinic admins',
+      'Keeping super-admin controls powerful but clear',
+    ],
+    solutions: [
+      'Built role-specific portal structures for client, clinic-admin, and super-admin users',
+      'Implemented backend authorization around the actual business roles',
+      'Organized appointment and dashboard flows around each user type',
+    ],
+    results: [
+      'Delivered a multi-portal appointment system for healthcare workflows',
+      'Improved separation between client actions, clinic operations, and platform controls',
+      'Created a scalable architecture for future clinic and booking features',
+    ],
+    order: 0.1,
+  },
+
+  {
+    id: 'finance-saas-product',
+    title: 'Finance SaaS Product',
+    shortTitle: 'Finance SaaS',
+    tagline: 'Secure full-stack product work for finance operations',
+    description:
+      'A finance-related SaaS product focused on secure backend APIs, structured PostgreSQL data, and reliable product workflows for business users.',
+    longDescription: `A finance-related SaaS product developed in a professional software house environment. My work focused on building secure, maintainable full-stack features with clean API design, PostgreSQL-backed data flows, and production-oriented development practices.
+
+**Key Features:**
+- Finance-domain product workflows
+- Secure API-driven backend features
+- Structured database design with PostgreSQL
+- Dashboard and operational interface support
+- Team-based development using Git
+- Cloud deployment support through AWS
+
+**Technical Highlights:**
+- Next.js frontend implementation
+- NestJS backend modules
+- PostgreSQL schema and query work
+- Authentication and protected API patterns
+- AWS deployment workflows
+- Git collaboration in a professional team environment`,
+    client: 'Software House Product',
+    role: 'Full Stack Developer',
+    teamSize: 1,
+    duration: 'Company Product',
+    status: 'completed',
+    date: '2026-05-01',
+    featured: false,
+    popular: true,
+    category: 'saas-products',
+    subcategory: 'finance',
+    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'Finance'],
+    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
+    images: [],
+    thumbnail: '',
+    challenges: [
+      'Building finance-related features with security and data accuracy in mind',
+      'Designing maintainable backend modules for business workflows',
+      'Working within a team codebase while keeping changes clean and reviewable',
+    ],
+    solutions: [
+      'Used NestJS modules and services to keep backend logic organized',
+      'Modeled relational data in PostgreSQL for reliable product workflows',
+      'Followed Git collaboration practices for production-quality delivery',
+    ],
+    results: [
+      'Contributed full-stack features to a finance SaaS product',
+      'Improved backend structure and product workflow reliability',
+      'Supported production delivery through AWS and team-based Git workflows',
+    ],
+    order: 0.2,
+  },
+
   // ============================================
   // MERN & FULL STACK PROJECTS
   // ============================================
