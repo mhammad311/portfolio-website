@@ -10,7 +10,7 @@ import { getProjectImages } from './projectImages';
  * Project categories
  */
 export const projectCategories = [
-  { id: 'saas-products', name: 'SaaS Products', count: 3, icon: 'SaaS' },
+  { id: 'saas-products', name: 'SaaS Products', count: 2, icon: 'SaaS' },
   { id: 'all', name: 'All Projects', count: 0, icon: '📁' },
   { id: 'full-stack', name: 'Full Stack', count: 3, icon: '🚀' },
   { id: 'ai-ml', name: 'AI/ML', count: 1, icon: '🤖' },
@@ -30,31 +30,69 @@ export const projects = [
   // ============================================
   {
     id: 'medical-ecommerce-saas',
-    title: 'Medical E-Commerce SaaS Platform',
-    shortTitle: 'Medical E-Commerce',
-    tagline: 'Full product store with operations-ready admin panel',
+    title: 'Healthcare Commerce & E-Prescription Platform',
+    shortTitle: 'Healthcare Commerce',
+    tagline: 'B2B healthcare commerce, prescription management, and administration platform',
     description:
-      'A medical-field e-commerce product built for managing a complete product catalog, customer ordering flow, and admin operations from one central system.',
-    longDescription: `A full e-commerce product for the medical field, developed as part of a software house team. The platform supports product discovery, product detail flows, ordering workflows, and an admin panel for managing day-to-day store operations.
+      'Developed a full-stack B2B healthcare commerce and e-prescription platform connecting practitioners, prescribers, patients, and operational administrators.',
+    longDescription: `Designed and developed a production-grade healthcare commerce platform connecting practitioners, prescribers, patients, and operational administrators.
+
+The system combines online product ordering with regulated prescription workflows. It supports prescription-required products, patient-level product allocation, BMI validation, secure PDF generation and signing, stock control, payments, order fulfilment, and transactional notifications.
 
 **Key Features:**
-- Complete product catalog for medical products
-- Product listing, detail, filtering, and search flows
-- Customer-facing e-commerce experience
-- Admin panel for product, order, and operational management
-- Role-based access for internal users
-- Backend APIs for product and order workflows
-- Deployment and collaboration through AWS and Git-based workflows
+- Multi-role authentication for practitioners, prescribers, customers, and administrators
+- Professional account registration with document uploads and email verification
+- Practitioner-to-prescriber invitation, approval, and relationship management
+- Patient profile management with BMI validation and preserved order history
+- Product catalogue with categories, promotions, VAT rules, stock levels, and practitioner-specific pricing
+- Persistent shopping cart, wishlist, search, filtering, and product availability validation
+- Prescription-required product allocation across patients and prescribers
+- Per-product and category-level prescription quantity restrictions
+- Automatic prescription PDF generation and secure digital signing
+- Private AWS S3 document storage with time-limited signed URLs
+- Order placement using bank transfer or hosted online payment processing
+- Transaction-safe order creation, stock deduction, and prescription generation
+- Order history, payment status, shipping, delivery, and fulfilment tracking
+- Responsive practitioner and prescriber dashboards
+- Secure administrator impersonation with token exchange and audit logging
+- Operational dashboards for orders, sales, prescriptions, stock, and active offers
+
+**Administration System:**
+- Product, category, promotion, and stock management
+- Practitioner and prescriber approval and document review
+- Product-specific practitioner pricing
+- Order editing, picking quantities, dispatch, cancellation, and payment updates
+- Prescription and order PDF generation
+- Delivery option and popup management
+- System-user administration and password management
+- Dashboard reporting and low-stock alerts
+- Protected read-only SQL editor with pagination, query timeouts, blocked operations, and saved queries
 
 **Technical Highlights:**
-- Next.js frontend for fast user-facing screens
-- NestJS backend architecture
-- PostgreSQL database design
-- Secure API structure
-- AWS deployment support
-- Git workflow for team collaboration`,
+- Next.js 15 App Router, React 19, TypeScript, and Tailwind CSS
+- Server and client components with context-based cart and authentication state
+- Recharts dashboards, TipTap rich-text editing, and canvas-based digital signatures
+- NestJS 11, TypeScript, PostgreSQL with TypeORM, and modular REST APIs
+- JWT authentication, role-based guards, Swagger/OpenAPI documentation, and Jest testing
+- Redis-backed prescription and cart state with database fallback
+- AWS S3 for private images, documents, and prescription PDFs
+- AWS SES for transactional email delivery
+- AWS ECR and EC2 for container deployment
+- Worldpay hosted payment pages and callback processing
+- Docker-based frontend and backend services
+- GitHub Actions CI/CD for development, UAT, and production environments
+
+**Engineering Contributions:**
+- Modernized legacy backend behavior into a modular NestJS and PostgreSQL architecture
+- Preserved API compatibility while resolving response-shape and database differences
+- Stabilized checkout, VAT, pricing, stock, prescription allocation, and order-summary calculations
+- Implemented transaction-safe order processing and post-commit prescriber notifications
+- Improved authentication, password recovery, account activation, and impersonation workflows
+- Added reliable AWS credential handling and secure signed-document access
+- Built regression tests around high-risk prescription, order, user, and administrative workflows
+- Diagnosed and resolved production issues across frontend state, backend logic, cloud configuration, and CI/CD pipelines`,
     client: 'Software House Product',
-    role: 'Full Stack Developer',
+    role: 'Senior Full-Stack Developer',
     teamSize: 1,
     duration: 'Company Product',
     status: 'completed',
@@ -62,56 +100,81 @@ export const projects = [
     featured: true,
     popular: true,
     category: 'saas-products',
-    subcategory: 'medical-ecommerce',
-    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'SaaS'],
-    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
+    subcategory: 'healthcare-commerce',
+    technologies: ['Next.js', 'React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Redis', 'AWS', 'Docker', 'GitHub Actions'],
+    tools: ['VSCode', 'Git', 'AWS S3', 'AWS SES', 'AWS ECR', 'AWS EC2', 'Worldpay', 'Docker'],
     images: [],
     thumbnail: '',
     challenges: [
-      'Structuring a complete e-commerce flow for a medical product catalog',
-      'Building admin features that make product and order management practical',
-      'Keeping frontend, backend, and database workflows maintainable as features grew',
+      'Combining healthcare commerce with regulated prescription workflows',
+      'Maintaining accurate VAT, pricing, stock, prescription allocation, and order-summary calculations',
+      'Preserving legacy API compatibility while modernizing the backend architecture',
     ],
     solutions: [
-      'Separated customer-facing flows from admin workflows with clear role boundaries',
-      'Designed reusable API modules and database models around product and order operations',
-      'Used Git-based collaboration and AWS deployment practices for production delivery',
+      'Built modular NestJS and PostgreSQL services with transaction-safe order and prescription processing',
+      'Implemented role-based workflows for practitioners, prescribers, customers, and administrators',
+      'Integrated AWS S3, AWS SES, Docker, and GitHub Actions for secure document handling and CI/CD',
     ],
     results: [
-      'Delivered a full e-commerce product experience for medical products',
-      'Enabled admin users to manage products, orders, and operations from one panel',
-      'Created a scalable foundation for adding future SaaS features',
+      'Delivered a production-grade B2B healthcare commerce and e-prescription platform',
+      'Enabled prescription-required ordering, secure PDF signing, payments, stock control, and fulfilment tracking',
+      'Strengthened authentication, cloud integrations, regression testing, and production reliability',
     ],
     order: 0,
   },
-
   {
     id: 'clinic-appointment-saas',
-    title: 'Clinic Appointment SaaS With Three Portals',
-    shortTitle: 'Clinic Appointment System',
-    tagline: 'Client, clinic-admin, and super-admin portals',
+    title: 'Multi-Tenant Clinic Management SaaS',
+    shortTitle: 'Clinic Management SaaS',
+    tagline: 'Full-stack healthcare SaaS platform for clinics, patients, and platform administrators',
     description:
-      'A medical appointment system with three separate portals for clients, clinic administrators, and super administrators, built for structured healthcare booking workflows.',
-    longDescription: `A complete appointment system for the medical field, designed around three clear user portals: client, clinic-admin, and super-admin. The product helps users book appointments while giving clinics and platform administrators the tools they need to manage schedules, users, and operational workflows.
+      'Designed and developed a multi-tenant clinic management SaaS serving clinic teams, practitioners, patients, and platform administrators within a secure branch-aware architecture.',
+    longDescription: `A comprehensive multi-tenant clinic management platform designed to centralize clinical operations, patient engagement, appointment scheduling, payments, staff management, and platform administration. The system supports multiple clinics and branches while maintaining strict tenant isolation, role-based permissions, subscription entitlements, and auditable workflows.
 
-**Key Features:**
-- Client portal for appointment booking and account flows
-- Clinic-admin portal for clinic-level management
-- Super-admin portal for platform-level control
-- Role-based access and protected workflows
-- Appointment scheduling and management
-- Dashboard-style interfaces for administrators
-- API-driven architecture for scalable product growth
+The platform consists of three dedicated applications: Clinic Portal for clinic owners, practitioners, receptionists, and staff; Patient Portal for bookings, forms, payments, aftercare, and appointment management; and Super Admin Portal for tenant onboarding, plans, features, billing, risk monitoring, support, and platform governance.
 
-**Technical Highlights:**
-- Next.js interfaces for multiple portals
-- NestJS backend services
-- PostgreSQL relational data modeling
-- Role-based authorization
-- AWS deployment workflows
-- Git-based collaboration and delivery`,
+**Core Features:**
+- Multi-clinic and multi-branch tenant architecture
+- Role-based access for clinic owners, practitioners, staff, patients, and platform administrators
+- Subscription plans, feature entitlements, usage limits, and tenant-specific overrides
+- Clinic registration, plan selection, Stripe checkout, and approval workflows
+- Appointment calendar with location, practitioner, treatment, availability, closures, and rota validation
+- Public booking links with guest booking, secure magic-link access, deposits, and confirmation policies
+- Staff management with branches, departments, designations, services, rota requests, leave, and availability
+- Patient records covering medical history, appointments, notes, forms, invoices, payments, and activity
+- Digital medical and consent forms with patient signatures, versioning, secure links, and submission tracking
+- Eight-step treatment records containing questionnaires, consent, clinical photos, treatment maps, notes, payments, and review
+- Professional treatment-record and invoice PDF generation
+- Inventory categories, brands, products, stock batches, stock in/out, adjustments, CSV import, and movement history
+- Treatment-linked stock recipes, reservations, consumption, reconciliation, and practitioner usage adjustments
+- Invoices, clinic discounts, deposits, refunds, disputes, reconciliation, and payment-attempt tracking
+- Stripe subscriptions, webhooks, Customer Portal, Payment Element, and Stripe Connect onboarding
+- AWS SES transactional email templates and Amazon S3 clinical file storage
+- Support inbox, audit history, platform risk monitoring, analytics, and operational reporting
+- Feature-gated marketing, shop, support, and training academy modules
+- Integration framework for Stripe, Zoho, Worldpay, and delivery services
+
+**Engineering Highlights:**
+- Server-authoritative tenant, clinic, branch, and entitlement validation
+- JWT authentication with role and feature-access guards
+- Immutable inventory movements with idempotency and stock-conflict protection
+- Secure, time-limited tokens for account activation, forms, appointments, and guest access
+- Validated DTOs, normalized API errors, security headers, and controlled CORS
+- Webhook idempotency and event persistence for reliable payment processing
+- Shared branding, UI components, authentication, feature catalogues, and API clients across portals
+- Automated database migrations and global default provisioning during deployment
+- Extensive API end-to-end coverage across booking, permissions, inventory, forms, plans, and Stripe
+- Dockerized CI/CD pipelines using GitHub Actions, Amazon ECR, and EC2 with deployment rollback support
+
+**Technology Stack:**
+- Next.js 14, React 18, TypeScript, NestJS, Prisma, and PostgreSQL
+- Tailwind CSS for responsive portal interfaces
+- Stripe subscriptions, checkout, Payment Element, Customer Portal, webhooks, and Stripe Connect
+- AWS SES for transactional emails and Amazon S3 for clinical file storage
+- Docker, GitHub Actions, Amazon ECR, and EC2 for CI/CD and deployment
+- Jest and Playwright for API and product workflow coverage`,
     client: 'Software House Product',
-    role: 'Full Stack Developer',
+    role: 'Full-Stack Developer / SaaS Product Engineer',
     teamSize: 1,
     duration: 'Company Product',
     status: 'completed',
@@ -119,85 +182,28 @@ export const projects = [
     featured: true,
     popular: true,
     category: 'saas-products',
-    subcategory: 'medical-appointments',
-    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'RBAC'],
-    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
+    subcategory: 'clinic-management',
+    technologies: ['Next.js', 'React', 'TypeScript', 'NestJS', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'AWS SES', 'Amazon S3', 'Docker', 'GitHub Actions', 'Amazon ECR', 'EC2', 'Jest', 'Playwright'],
+    tools: ['VSCode', 'Git', 'Stripe', 'AWS SES', 'Amazon S3', 'Docker', 'GitHub Actions', 'Amazon ECR', 'EC2'],
     images: [],
     thumbnail: '',
     challenges: [
-      'Managing three different portals without mixing user permissions',
-      'Designing appointment workflows that work for clients and clinic admins',
-      'Keeping super-admin controls powerful but clear',
+      'Supporting multiple clinics and branches while maintaining strict tenant isolation',
+      'Coordinating appointments, staff rotas, treatment records, forms, inventory, invoices, and payments across role-specific portals',
+      'Keeping subscription entitlements, feature gates, audit history, and payment events reliable at platform scale',
     ],
     solutions: [
-      'Built role-specific portal structures for client, clinic-admin, and super-admin users',
-      'Implemented backend authorization around the actual business roles',
-      'Organized appointment and dashboard flows around each user type',
+      'Implemented server-authoritative tenant, clinic, branch, role, and entitlement validation',
+      'Built dedicated Clinic, Patient, and Super Admin portals with shared UI, authentication, feature catalogues, and API clients',
+      'Added secure token flows, webhook idempotency, immutable inventory movements, automated migrations, and Dockerized CI/CD pipelines',
     ],
     results: [
-      'Delivered a multi-portal appointment system for healthcare workflows',
-      'Improved separation between client actions, clinic operations, and platform controls',
-      'Created a scalable architecture for future clinic and booking features',
+      'Delivered a multi-tenant clinic management SaaS for clinic teams, patients, and platform administrators',
+      'Centralized appointment scheduling, public booking, staff rota management, clinical records, inventory, invoicing, and Stripe payments',
+      'Improved operational reliability through audit logging, AWS communications, secure file storage, and extensive test coverage',
     ],
     order: 0.1,
   },
-
-  {
-    id: 'finance-saas-product',
-    title: 'Finance SaaS Product',
-    shortTitle: 'Finance SaaS',
-    tagline: 'Secure full-stack product work for finance operations',
-    description:
-      'A finance-related SaaS product focused on secure backend APIs, structured PostgreSQL data, and reliable product workflows for business users.',
-    longDescription: `A finance-related SaaS product developed in a professional software house environment. My work focused on building secure, maintainable full-stack features with clean API design, PostgreSQL-backed data flows, and production-oriented development practices.
-
-**Key Features:**
-- Finance-domain product workflows
-- Secure API-driven backend features
-- Structured database design with PostgreSQL
-- Dashboard and operational interface support
-- Team-based development using Git
-- Cloud deployment support through AWS
-
-**Technical Highlights:**
-- Next.js frontend implementation
-- NestJS backend modules
-- PostgreSQL schema and query work
-- Authentication and protected API patterns
-- AWS deployment workflows
-- Git collaboration in a professional team environment`,
-    client: 'Software House Product',
-    role: 'Full Stack Developer',
-    teamSize: 1,
-    duration: 'Company Product',
-    status: 'completed',
-    date: '2026-05-01',
-    featured: false,
-    popular: true,
-    category: 'saas-products',
-    subcategory: 'finance',
-    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'AWS', 'Git', 'Finance'],
-    tools: ['VSCode', 'Git', 'AWS', 'PostgreSQL'],
-    images: [],
-    thumbnail: '',
-    challenges: [
-      'Building finance-related features with security and data accuracy in mind',
-      'Designing maintainable backend modules for business workflows',
-      'Working within a team codebase while keeping changes clean and reviewable',
-    ],
-    solutions: [
-      'Used NestJS modules and services to keep backend logic organized',
-      'Modeled relational data in PostgreSQL for reliable product workflows',
-      'Followed Git collaboration practices for production-quality delivery',
-    ],
-    results: [
-      'Contributed full-stack features to a finance SaaS product',
-      'Improved backend structure and product workflow reliability',
-      'Supported production delivery through AWS and team-based Git workflows',
-    ],
-    order: 0.2,
-  },
-
   // ============================================
   // MERN & FULL STACK PROJECTS
   // ============================================

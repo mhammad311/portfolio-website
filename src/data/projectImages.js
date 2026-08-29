@@ -61,6 +61,14 @@ import phishingScreen9 from '../assets/images/projects/S9.png';
 import phishingScreen10 from '../assets/images/projects/S10.png';
 import businessThumbnail from '../assets/images/projects/b1.png';
 import businessVideo from '../assets/images/projects/business.mp4';
+import medicalEcommerceMain from '../assets/images/projects/M1.png';
+import medicalEcommerceScreen2 from '../assets/images/projects/M2.png';
+import medicalEcommerceScreen3 from '../assets/images/projects/M3.png';
+import medicalEcommerceScreen4 from '../assets/images/projects/M4.png';
+import clinicAppointmentMain from '../assets/images/projects/Dr1.png';
+import clinicAppointmentScreen2 from '../assets/images/projects/Dr2.png';
+import clinicAppointmentScreen3 from '../assets/images/projects/Dr3.png';
+import clinicAppointmentScreen4 from '../assets/images/projects/Dr4.png';
 
 const defaultPlaceholderSvg = `
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
@@ -108,6 +116,26 @@ const createProjectMedia = ({ thumbnail, alt, sources, poster }) => {
 };
 
 export const projectImages = {
+  'medical-ecommerce-saas': createProjectMedia({
+    thumbnail: medicalEcommerceMain,
+    alt: 'Healthcare Commerce & E-Prescription Platform',
+    sources: [
+      medicalEcommerceMain,
+      medicalEcommerceScreen2,
+      medicalEcommerceScreen3,
+      medicalEcommerceScreen4,
+    ],
+  }),
+  'clinic-appointment-saas': createProjectMedia({
+    thumbnail: clinicAppointmentMain,
+    alt: 'Multi-Tenant Clinic Management SaaS',
+    sources: [
+      clinicAppointmentMain,
+      clinicAppointmentScreen2,
+      clinicAppointmentScreen3,
+      clinicAppointmentScreen4,
+    ],
+  }),
   'ecommerce-mern': createProjectMedia({
     thumbnail: ecomMain,
     alt: 'E-Commerce Website (MERN + Admin Panel)',
